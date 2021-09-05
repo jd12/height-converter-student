@@ -1,4 +1,43 @@
 # Height Converter Project
+
+## Part One: Install Eclipse, Set up Commit Template, and Import Project
+
+### Install Eclipse
+
+Go to https://www.eclipse.org/ and click the orange Download button. It will take you to another page where you will click the Download button again. This will take you to a third page where you will again click the Download button.
+
+Open up the Eclipse Installer and Click `Eclipse IDE for Java Developers`
+
+Click the Install button.
+
+While it's installing follow the next steps.
+
+### Clone Project and Set up Commit Template
+
+Begin by cloning the provided project and importing it into your workspace.
+
+`git clone <url for github repository>`
+
+After cloning this repository you want to run these commands
+
+`git checkout -b development`
+
+This will create a branch named development and switch you to it. The development branch is where you will make all your commits.
+
+```
+cp git-commit-template.txt ~/.git-commit-template.txt
+git config --global commit.template ~/.git-commit-template.txt
+```
+
+This will set up your commit template to automatically bring up the file to remind you of the format you want.
+
+### Import into Eclipse
+
+You should then go to Eclipse, which hopefully has finished installing.
+
+In the top toolbar, click File --> Import. Double-click on General and then Existing Projects into Workspace. Click Browse next to Project Root Directory and find your folder and click Open. The project should pop up in the text box Projects. Click finish and you should be good to go!
+
+## Part Two: Complete HeightConverter Assignment
 For this assignment, write a complete program that prints your name, age, your height in inches, and - using the fact that there are 2.54 centimeters in an inch - your height in centimeters.
 The objectives of this assignment are to:
 
@@ -30,3 +69,8 @@ Project Requirements:
   `System.out.println("age: 22");`
 - Your output must match the format shown above exactly- of course the numeric values will differ, but you must follow the format shown. That means you must print the units after the values.
 - Your code should be simple: no objects created, just use assignment and print statements in the main method.
+
+## Part Three: Commit Project and Submit Pull Request
+When you have finished your solution and are ready to submit, make a commit and push eveything up to Github.
+
+Submit a pull request to the main repository so that I know your code is ready to be reviewed.
